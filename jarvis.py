@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 OPENAI_KEY = os.getenv('OPENAI_KEY')
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 prompt = 'Jarvis,'
 
