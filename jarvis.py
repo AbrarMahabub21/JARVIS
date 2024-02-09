@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 OPENAI_KEY = os.getenv('OPENAI_KEY')
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 prompt = 'Jarvis,'
 
@@ -42,7 +42,7 @@ def record_text():
             print("Unknown error occurred")
 
 
-def send_to_chatGPT(messages, model="text-davinci-003"):
+def send_to_chatGPT(messages, model="text-davinci-edit-001"):
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
